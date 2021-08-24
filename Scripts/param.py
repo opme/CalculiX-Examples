@@ -84,7 +84,7 @@ for line in f:
                     key=active.split("=")[0]
                     if key in argParamsDict:
                         exec(key+"="+argParamsDict[key],g,l)
-                        print("  Override by command line: ("+argParamsDict[key]+")"
+                        print("  Override by command line: ("+argParamsDict[key]+")")
                         res=key+"="+argParamsDict[key]
                 except Exception as ex:
                     #template = "An exception of type {0} occured. Arguments:\n{1!r}"
