@@ -47,7 +47,7 @@ def solid_conv():
         fdata.write("# size NoN smax umax\n")
         # loop over element sizes
         for elsize in elsizes:
-            print(elty, elsize
+            print(elty, elsize)
             # modify solid.fbd and write output to solid-auto.fbd
             fout = open("solid_auto.fbd", "w")
             for line in lines:
@@ -73,7 +73,7 @@ def solid_conv():
                 if line.startswith("    2C"):
                     nnode=int(line.split()[1])
             f.close()
-            print("Knotenzahl ", nnode
+            print("Knotenzahl ", nnode)
             # get smax from smax.txt
             smax=numpy.genfromtxt("smax.txt")[3]
             # get umax from umax.txt
