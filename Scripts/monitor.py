@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 This is a monitor for .sta and .cvg files of calculix
 """

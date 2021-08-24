@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """execute all test scripts in the example collection"""
 import os, fnmatch, multiprocessing
 
