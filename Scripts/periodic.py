@@ -100,5 +100,5 @@ for i in z0:
                 fo.write("3\n{0},2,-1,{1},2,1,{2},2,1\n".format(j,i,nz))
                 fo.write("3\n{0},3,-1,{1},3,1,{2},3,1\n".format(j,i,nz))
                 constrained.append(j)
-print("{0} nodes constrained".format(len(constrained))
+print("{0} nodes constrained".format(len(constrained)))
 fo.close()
