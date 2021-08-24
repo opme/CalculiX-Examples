@@ -4,9 +4,12 @@
 
 import os
 import multiprocessing
-import pylab
 import numpy
 import shutil
+# replace pylab import
+import matplotlib as mpl
+mpl.use('Agg')
+import matplotlib.pylab as pylab
 
 
 # Provide access to the helper scripts

@@ -3,9 +3,12 @@
 This is a monitor for .sta and .cvg files of calculix
 """
 import sys
-import pylab
 import numpy
 import glob
+# replace pylab import
+import matplotlib as mpl
+mpl.use('Agg')
+import matplotlib.pylab as pylab
 
 # print(sys.argv[1]
 # job = sys.argv[1]

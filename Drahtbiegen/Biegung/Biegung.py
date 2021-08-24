@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-import pylab
+# replace pylab import
+import matplotlib as mpl
+mpl.use('Agg')
+import matplotlib.pylab as pylab
 import numpy
 
 de = numpy.genfromtxt("total internal energy_EDRAHT.txt")
