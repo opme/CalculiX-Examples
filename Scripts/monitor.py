@@ -12,7 +12,7 @@ import glob
 # processing command line arguments, get the
 # jobname
 if len(sys.argv)==1:
-    print("No jobname given."
+    print("No jobname given.")
     files=glob.glob("*.sta")
     if len(files)==1:
         print("Found", files[0])
