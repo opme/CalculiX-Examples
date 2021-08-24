@@ -66,7 +66,7 @@ def solid_conv():
             fout.write("quit\n")
             fout.close()
             # run solid_auto.fbd (preprocessing, solving and postprocessing)
-            os.system("cgx -b solid_auto.fbd")
+            os.system("cgx -bg solid_auto.fbd")
             # get number of nodes from solid.frd
             f=open("solid.frd")
             for line in f:

@@ -40,7 +40,7 @@ Edit the parameters in `par.pre.fbd` and run the commands
 
 ```
 > param.py par.pre.fbd
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 The outer contour and the slot of the tools are generated bottom up using points and lines.
 The radii are generated using the `fil` command.
@@ -76,7 +76,7 @@ While the solution is running (takes a while), you can inspect the progress with
 ```
 If you change parameters and experience heavy convergence problems then inspecting the intermediate unconverged iterations can help a lot:
 ```
-> cgx -b iter.fbd
+> cgx -bg iter.fbd
 ```
 For the default parameters in the example, convergence isn't really an issue. For such stability to reach, it was essential to
 + place the parts such that they initially touch,
@@ -88,7 +88,7 @@ For the default parameters in the example, convergence isn't really an issue. Fo
 ## Postprocessing
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 Equivalent plastic strain and deformed shape of the profile:
 

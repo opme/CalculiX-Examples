@@ -47,7 +47,7 @@ num       | 10    | Number of mode shape movies to generate
 A frequency analysis is performed to see how the coupling works.
 
 ```
-> cgx -b test.fbl
+> cgx -bg test.fbl
 ```
 ## Results
 

@@ -27,7 +27,7 @@ File                 | Contents
 ## Preprocessing
 
 ```
-> cgx -b RVE.fbd
+> cgx -bg RVE.fbd
 ```
 
 The geometry consists of a simple brick with fillets, representing a single half road (quarter of a layer).
@@ -64,7 +64,7 @@ The second command generates a convergence history plot of the solution.
 ## Postprocessing
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 This creates a stress-strain curve and an expanded plot of the equivalent plastic strain.
 

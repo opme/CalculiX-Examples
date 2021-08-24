@@ -34,7 +34,7 @@ The parameters can be changed in `pre.fbd`.
 | `divl` | 100 | mesh division in longitudinal direction |
 
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 <img src="contact.png" width="400"><img src="sets.png" width="400">
 
@@ -53,7 +53,7 @@ A non-linear static step with initial increment of 10% is used.
 ## Postprocessing
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 Equivalent stress
 

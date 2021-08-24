@@ -37,7 +37,7 @@ Three simulations are set up:
 
 The script generates the elements, the surface sets and the reference nodes.
 ```
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 <img src="Refs/mesh.png" width="400">
 
@@ -53,7 +53,7 @@ For each step, 10 mode shapes are stored.
 ```
 Post-Processing
 ```
-> cgx -b shapes.fbd
+> cgx -bg shapes.fbd
 ```
 Free (unconstrained reference node).
 
@@ -90,14 +90,14 @@ monitor.py trans
 <img src="trans.png">
 
 ```
-cgx -b anim.fbl
+cgx -bg anim.fbl
 ```
 
 <img src="Refs/trans.gif">
 
 
 ```
-cgx -b post.fbl
+cgx -bg post.fbl
 ```
 The stress distribution at the support (rigid body constraint by kinematic coupling) is essentially identical to the reference solution (using direct nodal constraints)
 
@@ -115,7 +115,7 @@ For comparison a standard clamped cantilever solution is provided.
 + right end is subjected to a distributed load (distributing coupling) of 1000 N in various directions (x, y, z)
 ```
 ccx trfix
-cgx -b trfix.fbl
+cgx -bg trfix.fbl
 ```
 
 <img src="Refs/trfix1.png" width="400"><img src="Refs/trfix2.png" width="400">

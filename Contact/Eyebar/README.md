@@ -34,7 +34,7 @@ You can change the model type using the parameter `etyp` in `par.eyebar.fbd`.
 Default is 4 node plane strain.
 ```
 > param.py par.eyebar.fbd
-> cgx -b eyebar.fbd
+> cgx -bg eyebar.fbd
 ```
 <img src="mesh.png">
 
@@ -48,7 +48,7 @@ Default is 4 node plane strain.
 ## Postprocess
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 <img src="SE.png" width="400" title="Equivalent stress"><img src="PE.png" width="400" title="Equivalent plastic strain">
 

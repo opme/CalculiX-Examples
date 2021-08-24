@@ -25,7 +25,7 @@ File                     | Contents
 ## Preprocessing
 
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 
 The geometry consists of a simple brick, representing an eighth of the total specimen. In order to induce necking in the symmetry plane, a small imperfection (Width reduction) is introduced.
@@ -66,7 +66,7 @@ The second command generates a convergence history plot of the solution.
 ## Postprocessing
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 This creates a stress-strain curve and an expanded plot of the equivalent plastic strain.
 

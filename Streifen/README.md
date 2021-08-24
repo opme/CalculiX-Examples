@@ -43,7 +43,7 @@ In CGX, be3r elements are specified. This results in B32R elements in the CCX in
 
 The rotation is applied as constraint to dof 5 of the node at the free end of the beam. With the default convergence control settings, only 6% of the specified rotation are reached.
 ```
-> cgx -b b.fbd
+> cgx -bg b.fbd
 ```
 The script contains the pre-processing, solution and post-processing.
 
@@ -56,7 +56,7 @@ In CGX, qu8r elements are specified. This results in S8R elements in the CCX inp
 
 The rotation is applied as constraint to dof 5 of the nodes at the free end of the strip. The solution converges very well. Due to the large rotations, only invariant stress measures like v. Mises or principal stresses are useful.
 ```
-> cgx -b sh.fbd
+> cgx -bg sh.fbd
 ```
 
 <img src="sh-mesh.png" width="300" title="Shell model"><img src="sh-def.png" width="300" title="Worst principal stress">
@@ -79,7 +79,7 @@ This generates the files
 
 Run the analysis:
 ```
-> cgx -b sm.fbd
+> cgx -bg sm.fbd
 ```
 At 28% of the specified deformation, the incremental time becomes too small and the solution is stopped.
 
@@ -92,7 +92,7 @@ The rotation is applied using a rigid body constraint. The right end is rigidly 
 
 Run the analysis:
 ```
-> cgx -b sr.fbd
+> cgx -bg sr.fbd
 ```
 At 74% of the specified deformation, the incremental time becomes too small and the solution is stopped.
 
@@ -115,7 +115,7 @@ Nrefnode,5,5,1.57
 
 Run the analysis:
 ```
-> cgx -b scd.fbd
+> cgx -bg scd.fbd
 ```
 The simulation runs but the free end exhibits some hourglassing-like distortion.
 
@@ -140,7 +140,7 @@ Nrefnode,2,2
 
 Run the analysis:
 ```
-> cgx -b sck.fbd
+> cgx -bg sck.fbd
 ```
 At 78% of the specified deformation, the incremental time becomes too small and the solution is stopped.
 

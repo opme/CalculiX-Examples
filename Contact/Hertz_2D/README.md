@@ -33,7 +33,7 @@ The prescribed displacement (first step) or the pressure (second step) are appli
 
 The values for both variants are chosen independently, thus they can't be compared directly.
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 Two separate parts are generated and meshed with plane strain elements.
 
@@ -54,7 +54,7 @@ Sets and Contact surfaces:
 ## Postprocess
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 The solution shows the expected feature of Hertz contact with the maximum of the equivalent stress somewhat below the contact surface.
 
@@ -67,7 +67,7 @@ Results with pressure control (second step)
 <img src="SE_pc.png" width="400" title="Equivalent stress, pressure control"><img src="SE_pc-zoom.png" title="Equivalent stress, pressure control" width="400">
 
 ```
-> cgx -b plots.fbd
+> cgx -bg plots.fbd
 ```
 Stress plots along the symmetry line with x=0 at the contact location:
 

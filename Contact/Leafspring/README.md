@@ -36,11 +36,11 @@ In the file `pre.fbd` (or `pre_acd.fbd`) you can set the following parameters:
 
 Run
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 or
 ```
-> cgx -b pre_acd.fbd
+> cgx -bg pre_acd.fbd
 ```
 <img src="Refs/geo.png" width="300">
 
@@ -76,8 +76,8 @@ has been reduced. Then no convergence controls were required any more.
 ## Postprocessing
 
 ```
-> cgx -b post.fbd
-> cgx -b post_acd.fbd
+> cgx -bg post.fbd
+> cgx -bg post_acd.fbd
 ```
 Display of the bending stress in the model domain and symmetry expansion.
 

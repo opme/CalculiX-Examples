@@ -24,7 +24,7 @@ File                           | Contents
 
 ```
 > param.py par.pre.fbl
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 
 The problem is parametrized using [param.py](../../Scripts/param.py). The geometry is built bottom-up by first defining points, then lines and then surfaces. The local mesh refinement at the stress concentration is controlled by division and bias of the individual lines.
@@ -44,7 +44,7 @@ The left end at y=0 is fixed in axial direction, at the right end, a uniform ten
 ## Post-Processing
 
 ```
-> cgx -b post.fbl
+> cgx -bg post.fbl
 ```
 The stress concentration factor is the maximum stress divided by the applied nominal stress (100 MPa).
 

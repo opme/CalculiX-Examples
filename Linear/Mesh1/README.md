@@ -43,7 +43,7 @@ Parameter | Value | Description
 Set the appropriate values for the parameters in `pre.fbd`
 Generate the model using
 ```
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 <img src="Refs/mesh.png">
 
@@ -60,7 +60,7 @@ unconstrained model.
 
 Running
 ```
-> cgx -b shapes.fbl
+> cgx -bg shapes.fbl
 ```
 creates animated gifs for the individual mode shapes. Here we only show the non-rigid modes.
 

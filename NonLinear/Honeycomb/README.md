@@ -41,7 +41,7 @@ Parameter | Value   | Description
 You may edit the file [par.pre.fbl](par.pre.fbl) and then run
 ```
 > param.py par.pre.fbl
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 First, a unit cell is generated and then copied in x- and y-direction as many
 times as is required to fit the target dimensions.
@@ -70,7 +70,7 @@ The rate of convergence is affected by the plastic material, the mesh density, t
 
 ## Post-Processing
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 <img src="PE.png" width="400" title="Equivalent plasti strain"><img src="PE-core.png" width="400" title="Equivalent plastic strain in the core"><img src="SE.png" width="400" title="Equivalent stress"><img src="SE-core.png" width="400" title="Equivalent stress in the core">
 

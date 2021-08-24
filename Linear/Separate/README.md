@@ -16,7 +16,7 @@ File                       | Contents
 
 ## Preprocessing
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 There are four beams, fixed at the left end and loaded by a pressure on the top faces. Each beam is meshed with a different element type:
 
@@ -50,12 +50,12 @@ The difference between connected and disjoint meshes is shown by the CGX functio
 
 ### Nodal averaging (nodal solution)
 ```
-> cgx -b post-n.fbd
+> cgx -bg post-n.fbd
 ```
 <img src="nodal-mesh.png" width="400" title="Elements are connected by sharing nodes"><img src="nodal-sx.png" width="400" title="Longitudinal stress, averaged at the nodes">
 
 ### No nodal averaging (element solution)
 ```
-> cgx -b post-e.fbd
+> cgx -bg post-e.fbd
 ```
 <img src="element-mesh.png" width="400" title="Elements don't share nodes, nodes are connected by equations"><img src="element-sx.png" width="400" title="Longitudinal stress, not averaged at the nodes">

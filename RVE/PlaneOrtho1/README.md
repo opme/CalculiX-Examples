@@ -25,7 +25,7 @@ File                     | Contents
 ## Preprocessing
 
 ```
-> cgx -b RVE.fbd
+> cgx -bg RVE.fbd
 ```
 
 The geometry consists of brick with a fillet along a single edge, representing a quarter section of an FDM road.
@@ -70,7 +70,7 @@ First, let's verify the boundary conditions.
 * Uniform UY at y = ly
 
 ```
-> cgx -b verify.fbd
+> cgx -bg verify.fbd
 ```
 
 
@@ -79,7 +79,7 @@ First, let's verify the boundary conditions.
 
 Now let's create a stress-strain curve and an expanded plot of the equivalent plastic strain.
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 
 

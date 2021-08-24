@@ -23,7 +23,7 @@ Parameter | Value  | Description
 
 ```
 > param.py
-> cgx -b run.fbl
+> cgx -bg run.fbl
 ```
 
 ## Pre-Processing

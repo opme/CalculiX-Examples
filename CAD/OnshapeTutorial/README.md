@@ -37,14 +37,14 @@ is applied to the top circular surface.
 The complete analysis with gmsh-based meshing is run from a single CGX script. In order to proceed with
 the analysis you have to close the gmsh window.
 ```
-> cgx -b run.fbd
-> cgx -b runVT.fbd
+> cgx -bg run.fbd
+> cgx -bg runVT.fbd
 ```
 The individual steps of the workflow are discussed below.
 
 A gmsh-independent workflow is based on STEP import with  `cad2fbd` and subsequent meshing in CGX.
 ```
-> cgx -b run2.fbd
+> cgx -bg run2.fbd
 ```
 
 
@@ -87,7 +87,7 @@ The Gmsh command file `partVT.geo` uses these commands to produce a mesh without
 
 Execute
 ```
-> cgx -b VTdemo.fbd
+> cgx -bg VTdemo.fbd
 ```
 to produce images for comparison of the meshes produced with the original geometry or with the cleaned geometry (virtual topology).
 
@@ -145,7 +145,7 @@ The script `run1.fbd`
 + reads the resulting file `result.fbd`
 + tries to mesh the geometry with various settings.
 ```
-cgx -b run1.fbd
+cgx -bg run1.fbd
 ```
 Unfortunately, CGX can't mesh all surfaces with moderate mesh density.
 
@@ -160,7 +160,7 @@ If the mesh density is increased (all divisions multiplied by four) then automat
 Meshing is done in CGX as shown in the previous section.
 The load and support surfaces are generated from the surface names in the imported geometry.
 ```
-cgx -b run2.fbd
+cgx -bg run2.fbd
 ```
 <img src="Refs/sets2.png" width="400" title="Sets for boundary application">
 

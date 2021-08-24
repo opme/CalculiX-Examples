@@ -42,6 +42,6 @@ if __name__ == '__main__':
     # Run the example
     modify_path()
     snap = os.listdir(os.curdir)
-    os.system("cgx -b gmsh.fbl")
-    os.system("cgx -b run.fbl")
+    os.system("cgx -bg gmsh.fbl")
+    os.system("cgx -bg run.fbl")
     move(snap)

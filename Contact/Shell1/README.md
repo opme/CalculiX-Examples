@@ -29,7 +29,7 @@ Parameter | Value | Description
 
 
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 <img src="Refs/model.png" width="400"><img src="Refs/sets.png" width="400">
 
@@ -45,7 +45,7 @@ All nodes of the indenter are moved downwards in a static step with default solu
 
 Create a shaded image of the deformed structure
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 
 <img src="Refs/def1.png" width="400" title="Deformed geometry">

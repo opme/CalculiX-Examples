@@ -27,7 +27,7 @@ Click the image below to open a life worksheet:
 This element is internally expanded into C3D20R solid elements. Prescribed rotations are internally converted into mean rotation MPCs.
 
 ```
-> cgx -b b32.fbd
+> cgx -bg b32.fbd
 ```
 <img src="Refs/b32-disp.png" width="400" title="Deflection for B32R element"><img src="Refs/b32-se.png" width="400" title="Equivalent stress for B32R element">
 

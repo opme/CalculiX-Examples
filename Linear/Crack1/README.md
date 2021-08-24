@@ -50,7 +50,7 @@ Set the crack length:
 ```
 Run the analysis:
 ```
-> cgx -b ct.fbd
+> cgx -bg ct.fbd
 ```
 
 ## Preprocessing
@@ -96,7 +96,7 @@ Once the analysis is finished, the contents of `solve.dat` is displayed for conv
 ### Path Plot
 Run
 ```
-> cgx -b path.fbd
+> cgx -bg path.fbd
 ```
 to create a path plot of the normal stress (normal to the crack plane) and of the
 crack opening (displacement in load direction) along the centerline of the specimen (x-axis).

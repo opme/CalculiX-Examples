@@ -48,7 +48,7 @@ One row of nodes per beam is fixed in y-direction. This is a bit over-constraine
 The load is applied as a prescribed displacement of the nodes at x=0 (center between the supports) and at z=0 (through the section centroid).
 ```
 > param.py par.pre.fbl
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 <img src="mesh.png" width="400" title="Mesh density is biased towards the center section at x=0"><img src="sets.png" width="400" title="">
 
@@ -62,7 +62,7 @@ The ideal-plastic material can create convergence problems. These are mitigated 
 
 ## Post-Processing
 ```
-> cgx -b movie.fbl
+> cgx -bg movie.fbl
 ```
 The plastic zone is marked using a two-step color scheme with the plastic proof strain of 0.2% marking the limit between the two colors. The right movie shows the longitudinal (bending) stress with color bar limits 5% above the yield limit.
 
@@ -70,7 +70,7 @@ The plastic zone is marked using a two-step color scheme with the plastic proof 
 
 To create a force-displacement-plot, type
 ```
-> cgx -b -bg chart.fbl
+> cgx -bg -bg chart.fbl
 ```
 The displayed force is valid for the full model (twice the support reactions).
 

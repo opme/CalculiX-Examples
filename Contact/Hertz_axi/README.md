@@ -31,7 +31,7 @@ The load is applied as pressure to the flat equatorial surface of the hemisphere
 The lower surface of the flat disk (red) is constrained in axial (y) direction.
 The nodes on the axis of symmetry (magenta) are constrained in radial (x) direction.
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 <img src="parts.png" width="400"><img src="parts-zoom.png" width="400">
 <img src="lines.png" width="400"><img src="sets.png" width="400">
@@ -48,7 +48,7 @@ The nodes on the axis of symmetry (magenta) are constrained in radial (x) direct
 ## Postprocess
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 The solution shows the expected feature of Hertz contact with the maximum of the equivalent stress somewhat below the contact surface. However, there is evidence of contact finding problems near the axis of symmetry. With CAX8R elements (reduced integration, specify `qu8cr` in `pre.fbd`) this problem is even more pronounced.
 
@@ -57,7 +57,7 @@ The solution shows the expected feature of Hertz contact with the maximum of the
 <img src="SE-3D.png" title="Equivalent stress, symmetry expansion" >
 
 ```
-> cgx -b plots.fbd
+> cgx -bg plots.fbd
 ```
 Stress plot along the axis of symmetry (x=0) at the contact location:
 

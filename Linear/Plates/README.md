@@ -23,7 +23,7 @@ File                      | Contents
 | `pressure`     | 1       | pressure in MPa                   |
 
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 There are four disks, clamped at the outer perimeter and loaded by a pressure on the top faces. Each disk is meshed with a different element type:
 
@@ -43,7 +43,7 @@ Disk     |CGX  | CCX
 
 ## Postprocessing
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 Transformation to polar co-ordinates has to be applied after model expansion.
 

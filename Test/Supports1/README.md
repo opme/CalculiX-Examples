@@ -18,7 +18,7 @@ The geometry represents a gearbox shaft with bearing journals at the ends. These
 Note that this works only for solid elements (not for shells).
 
 ```
-> cgx -b run.fbl
+> cgx -bg run.fbl
 ```
 
 <img src="Refs/cgx-mesh.png" width="400">
@@ -47,7 +47,7 @@ In CGX 2.12 there was a bug, which resulted in fail of meshing the geometry.
 Therefore, an alternative simulation with gmsh as pre-processor has been set up
 
 ```
-> cgx -b gmsh.fbl
+> cgx -bg gmsh.fbl
 ```
 
 <img src="Refs/mesh.png" width="400">

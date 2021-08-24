@@ -43,5 +43,5 @@ if __name__ == '__main__':
     modify_path()
     snap = os.listdir(os.curdir)
     os.system("param.py par.run.fbl")
-    os.system("cgx -b run.fbl")
+    os.system("cgx -bg run.fbl")
     move(snap)

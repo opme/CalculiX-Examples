@@ -42,7 +42,7 @@ The parameters can be changed in `pre.fbd`.
 | `Div2` | 20 | number of circumferential mesh segments in the movable tool |
 
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 Node sets
 
@@ -80,10 +80,10 @@ The matching is reasonable, given the crude approach for the reference estimates
 
 Create the animation (see on the top of this page)
 ```
-cgx -b Animation.fbd
+cgx -bg Animation.fbd
 ```
 Open the results in CGX and create some plots
 ```
-cgx -b post.fbd
+cgx -bg post.fbd
 ```
 <img src="deform.png" width="300"><img src="PE.png" width="300">

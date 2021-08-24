@@ -63,7 +63,7 @@ dz        | 10    | axial offset between the bars in mm
 The script generated the elements, the surface, node and element sets and writes the coupling commands for ccx.
 ```
 > param.py par.pre.fbl
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 <img src="Refs/mesh.png" width="400"><img src="Refs/fix_load.png" width="400">
 
@@ -95,7 +95,7 @@ Coupling commands:
 4,5
 ```
 ```
-> cgx -b dist.fbl
+> cgx -bg dist.fbl
 ```
 The frequency analysis and the linear static analysis indicate that the pin is not movable at all. Movies of the modal shapes can be found in [Refs](./Refs).
 
@@ -125,7 +125,7 @@ Coupling commands:
 The interface surfaces are coupled to separate ref nodes. The ref nodes are connected by the pin with no released degrees of freedom. Thus the structure should behave like a single deformable part. However, it there is no coupling of rotations between the two parts and the pin. Movies of the modal shapes can be found in [Refs](./Refs).
 
 ```
-> cgx -b kin.fbl
+> cgx -bg kin.fbl
 ```
 
 <img src="Refs/kin1.gif" width="160"><img src="Refs/kin2.gif" width="160"><img src="Refs/kin3.gif" width="160"><img src="Refs/kin4.gif" width="160"><img src="Refs/kin5.gif" width="160">
@@ -173,14 +173,14 @@ Steps:
 
 ```
 > param.py par.pre2.fbl
-> cgx -b pre2.fbl
+> cgx -bg pre2.fbl
 ```
 <img src="Refs2/mesh.png" width="400"><img src="Refs2/surf.png" width="400">
 
 ### Solving and post-processing
 
 ```
-> cgx -b kin2.fbl
+> cgx -bg kin2.fbl
 ```
 The frequency analysis and the linear static analysis show the expected behaviour.
 

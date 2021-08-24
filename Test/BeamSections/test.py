@@ -42,7 +42,7 @@ if __name__ == '__main__':
     # Run the example
     modify_path()
     snap = os.listdir(os.curdir)
-    os.system("cgx -b b32.fbd")
+    os.system("cgx -bg b32.fbd")
     os.system("ccx u1General")
     os.system("sed -n '4,14 p' u1General.dat > u1.txt")
     os.system("gnuplot u1.plt")

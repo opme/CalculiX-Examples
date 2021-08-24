@@ -59,7 +59,7 @@ def run():
             
             # run the simulation
             os.chdir(simPath)
-            os.system("cgx -bg run.fbd")
+            os.system("cgx -bgg run.fbd")
             # extract frequencies
             os.system("dat2txt.py " + ctyp)
             freq=numpy.genfromtxt("Eigenvalues_1.txt",skip_header=1)

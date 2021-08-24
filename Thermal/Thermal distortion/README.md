@@ -35,7 +35,7 @@ The following parameters are defined in `pre.fbd.par`
 Create the file `pre.fbd` and run the pre-processing
 ```
 > param.py pre.fbd.par
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 Parts and contact surfaces:
 
@@ -53,7 +53,7 @@ ccx Tjoint
 ## Postprocessing
 
 ```
-cgx -b post.fbd
+cgx -bg post.fbd
 ```
 Penalty contact is less rigid than MPC contact, thus the maximum equivalent stress for MPC contact is higher.
 

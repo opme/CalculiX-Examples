@@ -42,7 +42,7 @@ if __name__ == '__main__':
     # Run the example
     modify_path()
     snap = os.listdir(os.curdir)
-    os.system("cgx -b pre.fbl")
+    os.system("cgx -bg pre.fbl")
     os.system("ccx modal")
-    os.system("cgx -b shapes.fbl")
+    os.system("cgx -bg shapes.fbl")
     move(snap)

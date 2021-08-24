@@ -23,7 +23,7 @@ This example demonstrates the interaction between a minimal honeycomb sandwich s
 
   * - Preprocessing :download:`pre.fbd` ::
 
-        > cgx -b pre.fbd
+        > cgx -bg pre.fbd
 
       The plot shows the shell meshes of the individual bodies, Note that you see the element edges on the negative side of the shell elements because
       ``view back`` was used.
@@ -44,7 +44,7 @@ This example demonstrates the interaction between a minimal honeycomb sandwich s
         :width: 100%
   * - Post-processing :download:`post.fbd` ::
 
-        > cgx -b post.fbd
+        > cgx -bg post.fbd
 
     - \
   * - Shaded plot of the deformed system

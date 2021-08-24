@@ -35,7 +35,7 @@ Parameter | Value | Description
 `le`      | 100   | Wength in mm
 
 ```
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 The simulation domain is restricted to one quarter of the plate due to symmetry. It is meshed with 6 layers of C3D20R elements with cross thickness bias to capture the high gradients at the excitation side.
 
@@ -61,12 +61,12 @@ is slightly slower than afterwards.
 
 Create a time history animation of the deformed shape colored by the temperature:
 ```
-> cgx -b anim.fbl
+> cgx -bg anim.fbl
 ```
 <img src="movie.gif" width="400" title="Animation of the temperature history">
 
 ```
-> cgx -b post.fbl
+> cgx -bg post.fbl
 ```
 creates the images used in the introduction above:
  1. a time history plot of the excitation intensity and the deflection of the plate tip

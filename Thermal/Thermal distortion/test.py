@@ -44,7 +44,7 @@ if __name__ == '__main__':
     snap = os.listdir(os.curdir)
     for contact in ('tie', 'pc-ss'):
         os.system("param.py par.pre.fbd contact=\"'"+contact+"'\"")
-        os.system("cgx -b pre.fbd")
+        os.system("cgx -bg pre.fbd")
         os.system("ccx Tjoint")
-        os.system("cgx -b post.fbd")
+        os.system("cgx -bg post.fbd")
     move(snap)

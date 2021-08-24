@@ -19,7 +19,7 @@ Tested with CGX 2.16 / CCX 2.15
 
 Run the complete example using
 ```
-> cgx -b all.fbd
+> cgx -bg all.fbd
 ```
 ## Preprocessing
 
@@ -50,7 +50,7 @@ To run the analysis separately, copy one of the contact definitions to `contact.
 ```
 You can use the CGX script `one.fbd` to run a single analysis including the post-processing
 ```
-> cgx -b one.fbd
+> cgx -bg one.fbd
 ```
 
 ## Postprocessing

@@ -42,8 +42,8 @@ if __name__ == '__main__':
     # Run the example
     modify_path()
     snap = os.listdir(os.curdir)
-    os.system("cgx -b pre.fbl")
+    os.system("cgx -bg pre.fbl")
     os.system("ccx Biegung")
     os.system("monitor.py Biegung")
-    os.system("cgx -b post.fbl")
+    os.system("cgx -bg post.fbl")
     move(snap)

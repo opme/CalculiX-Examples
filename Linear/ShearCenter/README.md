@@ -32,7 +32,7 @@ The four beams are generated using appropriate copy options and node merging.
 The load application points are selected using `enq` based on their location.
 ```
 > param.py par.II-pre.fbl
-> cgx -b II-pre.fbl
+> cgx -bg II-pre.fbl
 ```
 
 ## Solving
@@ -43,7 +43,7 @@ The simulation is linear.
 
 ## Post-Processing
 ```
-> cgx -b II-post.fbl
+> cgx -bg II-post.fbl
 ```
 The script generates plots of the deformed and the undeformed geometry and of
 the shear and bending stress.

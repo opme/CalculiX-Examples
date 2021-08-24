@@ -43,7 +43,7 @@ def run():
         fout.write("quit\n")
         fout.close()
         # run run_auto.fbd (preprocessing, solving and postprocessing)
-        os.system("cgx -b run_auto.fbd")
+        os.system("cgx -bg run_auto.fbd")
         # store the images.
         os.system("monitor.py static")
         os.system("mv expanded.png Refs/expanded-"+elty.lower()+".png")

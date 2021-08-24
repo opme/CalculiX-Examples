@@ -21,7 +21,7 @@ The plots of the normal stress show the load distribution for bending moments, t
 
 
 ```
-> cgx -b run.fbl
+> cgx -bg run.fbl
 
 ```
 

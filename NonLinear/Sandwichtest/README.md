@@ -37,7 +37,7 @@ The model represents a four point bending test of an elasto-plastic sandwich pla
 
 You may edit the file [values.fbl](values.fbl) and then run
 ```
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 <img src="Refs/mesh.png" width="400" title="Faces and core are separately meshed.">
 
@@ -61,7 +61,7 @@ The rate of convergence is affected by the plastic material, the mesh density in
 
 ## Post-Processing
 ```
-> cgx -b post.fbl
+> cgx -bg post.fbl
 ```
 The yield stress of the face sheets is much higher than that of the core. The specimen fails by core shear, the center zone with pure bending load remains in the elastic range.
 

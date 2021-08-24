@@ -34,7 +34,7 @@ To run the complete analysis, edit parameter values in [par.run.fbl](par.run.fbl
 and run
 ```
 > param.py par.run.fbl
-> cgx -b run.fbl
+> cgx -bg run.fbl
 ```
 
 ### Pre-Processing
@@ -87,7 +87,7 @@ Observations:
 ### Simulation
 ```
 param.py par.run1.fbl
-cgx -b run1.fbl
+cgx -bg run1.fbl
 ```
 Surface and reference node
 

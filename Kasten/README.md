@@ -31,7 +31,7 @@ The parameters can be changed in `pre.fbd`
 
 ![]()
 ```
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 Geometry and sets
 
@@ -105,7 +105,7 @@ U,RF
 ## Postprocessing
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 Magnitude of the displacement due to pressure application (imperfection). Max. deflection is approximately 10% of the sheet thickness.
 

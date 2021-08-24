@@ -25,7 +25,7 @@ File                   | Contents
 ## Preprocessing
 
 ```
-> cgx -b RVE.fbd
+> cgx -bg RVE.fbd
 > periodic.py all.msh
 ```
 
@@ -72,7 +72,7 @@ nz,2,2,0
 
 Plots of the equivalent stress, the periodicity of the deformation is visible.
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 
 

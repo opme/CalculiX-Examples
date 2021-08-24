@@ -23,7 +23,7 @@ and the result plots are generated and renamed according to the element type.
 
 Command for a single analysis:
 ```
-> cgx -b run.fbd
+> cgx -bg run.fbd
 ```
 ## Pre-processing
 

@@ -39,7 +39,7 @@ MPC contact with `*equation` leads to a hinged connection at shell edge to face 
 
 A single simulation is run using
 ```
-> cgx -b run.fbd
+> cgx -bg run.fbd
 ```
 Two separate parts are generated and meshed with shell elements. Specify element type and contact
 version using the parameters in `values.fbd`.

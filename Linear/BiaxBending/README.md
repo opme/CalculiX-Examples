@@ -50,7 +50,7 @@ This only couples the x displacement and the rotation about y and z of the refer
 The images show the axial stress distribution and the neutral fiber (with color bar steps set to 2).
 ```
 > param.py par.run.fbl
-> cgx -b run.fbl
+> cgx -bg run.fbl
 ```
 <img src="Refs/sxx.png"  width="400" title="Longitudinal stress."><img src="Refs/neutral.png"  width="400" title="Neutral fiber">
 <img src="Refs/disp.png"  width="400" title="Displacement">

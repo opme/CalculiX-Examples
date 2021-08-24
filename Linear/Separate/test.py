@@ -42,9 +42,9 @@ if __name__ == '__main__':
     # Run the example
     modify_path()
     snap = os.listdir(os.curdir)
-    os.system("cgx -b pre.fbd")
+    os.system("cgx -bg pre.fbd")
     os.system("ccx nodal")
     os.system("ccx element")
-    os.system("cgx -b post-n.fbd")
-    os.system("cgx -b post-e.fbd")
+    os.system("cgx -bg post-n.fbd")
+    os.system("cgx -bg post-e.fbd")
     move(snap)

@@ -45,7 +45,7 @@ Parameter | Value | Unit | Description
 
 ```
 > param.py par.pre.fbd
-> cgx -b pre.fbd
+> cgx -bg pre.fbd
 ```
 <img src="mesh.png"  width=400><img src="mesh-vsc.png"  width=400>
 
@@ -61,7 +61,7 @@ Parameter | Value | Unit | Description
 The postprocessing script generates plots of the equivalent stress of the 2D base and of the expanded model. Also, path plots of the contact pressure and slip are generated.
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 <img src="se.png" width="400" title="Equivalent stress"><img src="se_exp.png" width="400" title="Equivalent stress, symmetry expansion of the model">
 

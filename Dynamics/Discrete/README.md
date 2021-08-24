@@ -27,7 +27,7 @@ The system consists of two rigid bodies connected by springs and dashpots.
 
 Run the analysis:
 ```
-> cgx -b run.fbd
+> cgx -bg run.fbd
 ```
 
 ## Preprocessing
@@ -64,7 +64,7 @@ the masses are represented by mass elements (new in 2.12).
 <img src="meshM.png" width=400>
 
 ```
-> cgx -b runM.fbd
+> cgx -bg runM.fbd
 ```
 
 The simulation runs but the results are unreliable, because the eigensolver Arpack is not suited for small systems.

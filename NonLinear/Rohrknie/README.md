@@ -79,7 +79,7 @@ File                       | Contents
 [shell-modal.inp](shell-modal.inp)  | CCX input, modal analysis, shell model
 
 ```
-> cgx -b shell-modal.fbd
+> cgx -bg shell-modal.fbd
 ```
 <img src="Refs/geo-shell.png" width="400" title="Full shell model">
 
@@ -95,7 +95,7 @@ File                       | Contents
 [shell-sym-modal.inp](shell-sym-modal.inp)  | CCX input, modal analysis, shell model with symmetry
 
 ```
-> cgx -b shell-sym-modal.fbd
+> cgx -bg shell-sym-modal.fbd
 ```
 <img src="Refs/geo-shell-sym.png" width="400" title="Half shell model">
 
@@ -115,7 +115,7 @@ File                       | Contents
 ### Full solid model, modal analysis
 
 ```
-> cgx -b solid-modal.fbd
+> cgx -bg solid-modal.fbd
 ```
 <img src="Refs/geo-solid.png" width="400" title="Full solid model">
 
@@ -133,7 +133,7 @@ The generation of a force-displacement curve is demonstrated.
 
 First, the mesh is generated:
 ```
-> cgx -b solid.fbd
+> cgx -bg solid.fbd
 ```
 
 #### Solution
@@ -148,7 +148,7 @@ The analysis consists of two steps.
 
 #### Postprocessing:
 ```
-> cgx -b post-solid-static.fbd
+> cgx -bg post-solid-static.fbd
 ```
 Steps for generation of the  force-displacement curve:
  1. Extraction of the time history data from the dat-file using the script [dat2txt.py](../../Scripts/dat2txt.py).
@@ -170,7 +170,7 @@ The force-displacement plot is heavily non-linear because of the severe changes 
    [solid-sym-modal.inp](solid-modal.inp)  | CCX input, modal analysis, solid model
 
  ```
- > cgx -b solid-sym-modal.fbd
+ > cgx -bg solid-sym-modal.fbd
  ```
  <img src="Refs/geo-solid-sym.png" width="400" title="Half solid model">
 

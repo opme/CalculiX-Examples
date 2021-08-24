@@ -39,7 +39,7 @@ The beams are loaded by their own weight, properies of steel are assumed.
 
 ```
 > param.py par.pre.fbl
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 
 ## Solving
@@ -50,7 +50,7 @@ The simulation is essentially linear. The iterative procedure is used because of
 
 ## Post-Processing
 ```
-> cgx -b post.fbl
+> cgx -bg post.fbl
 ```
 The strength of a section shape is characterized by the section modulus, i.e. the ratio of applied bending moment divided by the maximum stress in the section. As all beams in the model carry the same load, they share the same bending moment.
 The relative strength, therefore can be measured by the ratio of the inverse maximum stress values. As a reference, the square section is used (relative strength = 1).

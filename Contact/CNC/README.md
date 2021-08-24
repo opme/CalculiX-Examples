@@ -22,10 +22,10 @@ File                          | Contents
 
 Generate the parts:
 ```
-> cgx -b profile.fbd
-> cgx -b winkel.fbd
-> cgx -b SK.fbd
-> cgx -b rod.fbd
+> cgx -bg profile.fbd
+> cgx -bg winkel.fbd
+> cgx -bg SK.fbd
+> cgx -bg rod.fbd
 ```
 
 <img src="Refs/profile.png" width="400" title="Profile"><img src="Refs/winkel.png" width="400" title="Bracket">                                     
@@ -34,7 +34,7 @@ Generate the parts:
 # Assembly
 
 ```
-> cgx -b assembly.fbd
+> cgx -bg assembly.fbd
 ```
 
 The part meshes are read, copied, translated, rotated and sometimes scaled. If contact is required, the parts touch each other without gap.
@@ -53,7 +53,7 @@ In order to verify correct bonding of the parts, a modal analysis is performed. 
 The postprocessing script shows the eigenmodes:
 
 ```
-> cgx -b post.fbd
+> cgx -bg post.fbd
 ```
 <img src="Refs/shape_7.gif" width="400" title="Mode 7"><img src="Refs/shape_8.gif" width="400" title="Mode 8">
 <img src="Refs/shape_9.gif" width="400" title="Mode 9"><img src="Refs/shape_10.gif" width="400" title="Mode 10">

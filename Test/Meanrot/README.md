@@ -36,7 +36,7 @@ For path plots of the stress distribution, appropriate node sets are generated.
 
 The plots of the normal stress show the load distribution for bending moments, the plots of the max shear stress show the load distribution in torsion.
 ```
-> cgx -b run.fbl
+> cgx -bg run.fbl
 ```
 <img src="Refs/mx.png" width="400"><img src="Refs/my.png" width="400">
 <img src="Refs/mz-disp.png" width="400"><img src="Refs/mesh.png" width="400">

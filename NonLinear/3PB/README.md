@@ -41,7 +41,7 @@ The model represents a three point bending test on a elasto-plastic beam with a 
 You may adjust the parameter values in the file [par.pre.fbl](par.pre.fbl) and then run
 ```
 > param.py par.pre.fbl
-> cgx -b pre.fbl
+> cgx -bg pre.fbl
 ```
 The model is reduced to one quarter using symmetry.
 
@@ -65,12 +65,12 @@ elements grows with increasing indentation, but then shrinks due to local buckli
 ## Post-Processing
 A movie showing the contact details:
 ```
-> cgx -b cpost.fbl
+> cgx -bg cpost.fbl
 ```
 <img src="movie.gif"  title="contact zone">
 
 ```
-> cgx -b post.fbl
+> cgx -bg post.fbl
 ```
 The plastic strain is displayed, the color bar is restricted to 0...4%.
 

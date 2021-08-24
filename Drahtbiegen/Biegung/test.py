@@ -37,7 +37,7 @@ def pre():
         for f in files:
             print(f
             os.remove(f)
-    os.system("cgx -b pre.fbd")
+    os.system("cgx -bg pre.fbd")
 
 
 # solve, can take a while
@@ -73,8 +73,8 @@ def post():
     os.system("monitor.py Biegung")
     os.system("dat2txt.py Biegung")
     os.system("./Biegung.py")
-    os.system("cgx -b Animation.fbd")
-    os.system("cgx -b post.fbd")
+    os.system("cgx -bg Animation.fbd")
+    os.system("cgx -bg post.fbd")
 
 
 # Move new files and folders to 'Refs'

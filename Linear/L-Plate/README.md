@@ -36,7 +36,7 @@ Boundary conditions
 Set the appropriate values for the parameters in `par.run.fbd` and run the simulation using
 ```
 > param.py par.run.fbl
-> cgx -b run.fbl
+> cgx -bg run.fbl
 ```
 ## Solution
 
@@ -54,7 +54,7 @@ The analysis consists of 3 steps:
 ### Vibration mode shapes
 These are displayed using `ds <n> a` to get a sinusoidal animation
 ```
-> cgx -b vmodes.fbd
+> cgx -bg vmodes.fbd
 ```
 <img src="v1.gif" width="400"><img src="v2.gif" width="400">
 
@@ -69,6 +69,6 @@ ds <n> a
 ```
 to get a single-sided animation:
 ```
-> cgx -b bmodes.fbd
+> cgx -bg bmodes.fbd
 ```
 <img src="b1.gif" width="400"><img src="b2.gif" width="400">
