@@ -8,7 +8,7 @@
 #valu ctyp pc-ns
 
 # read values from file. If file doesn't exist, the defaults are used
-# print pwd
+# print(pwd
 sys pwd
 stack on
 read values.fbd
