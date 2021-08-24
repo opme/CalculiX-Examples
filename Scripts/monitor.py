@@ -15,15 +15,15 @@ if len(sys.argv)==1:
     print("No jobname given."
     files=glob.glob("*.sta")
     if len(files)==1:
-        print("Found", files[0]
+        print("Found", files[0])
         job=files[0][:-4]
     else:
-        print("Available .sta files:"
+        print("Available .sta files:")
         for f in files:
-            print("  ", f
+            print("  ", f)
         quit()
 if len(sys.argv)>1:
-    print("Jobname:",sys.argv[1]
+    print("Jobname:",sys.argv[1])
     job = sys.argv[1]
 try:
     sta=numpy.genfromtxt(job+'.sta',skip_header=2,delimiter=[6,11,7,6,14,14,14])
@@ -74,12 +74,12 @@ for i in it:
         if (stp==sta.astype(int)[j,0]) and (inc==sta.astype(int)[j,1]):
             itdt[i]=sta[j,6]
             itsteptime[i]=sta[j,5]
-            print(i, stp, inc, j, itdt[i],itsteptime[i],cvg[i,5]
+            print(i, stp, inc, j, itdt[i],itsteptime[i],cvg[i,5])
             istamax=i
             icvgmax=i
             found=1
     if (not found==1):
-        print(i, stp, inc, cvg[i,4], cvg[i,5]
+        print(i, stp, inc, cvg[i,4], cvg[i,5])
         icvgmax=i
 ## Plot force residuals, disp correction and time step
 pylab.subplot(2,1,1)
