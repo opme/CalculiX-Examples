@@ -186,7 +186,7 @@ class RunAllTests:
 
             # Execute the test script
             os.chdir(dir_name)
-            os.system('./test.py > test.log')
+            os.system('python ./test.py > test.log')
             os.chdir(self.start_folder)
 
             # Roll back files modifications

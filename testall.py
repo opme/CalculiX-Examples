@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/opt/conda/bin/python
 """execute all test scripts in the example collection"""
 import os, fnmatch, multiprocessing
 
@@ -15,4 +15,4 @@ for path, dirs, files in os.walk(os.path.abspath(os.curdir)):
         # change to the example directory
         os.chdir(path)
         # execute the test script
-        os.system("./test.py > test.log")
+        os.system("python ./test.py > test.log")

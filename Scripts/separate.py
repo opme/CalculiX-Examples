@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/opt/conda/bin/python
 """
 This script replicates nodes to avoid nodal averaging of results.
 The elements are scanned and if a node is used repeatedly, it is replaced by

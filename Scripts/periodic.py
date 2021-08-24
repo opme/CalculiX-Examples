@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/opt/conda/bin/python
 """
 This script creates equations for periodic boundary conditions of a brick-shaped RVE. We assume that it's corners are at (0,0,0) and (lx,ly,lz).
 The dimensions are determined from the nodal co-ordinates.

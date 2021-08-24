@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/opt/conda/bin/python
 
 """ Convergence study for solid elements """
 

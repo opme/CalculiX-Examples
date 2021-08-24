@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/opt/conda/bin/python
 
 # replace pylab import
 import matplotlib as mpl

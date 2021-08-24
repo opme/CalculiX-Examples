@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/opt/conda/bin/python
 """
 This script searches for strings in
 angle brackets <...>

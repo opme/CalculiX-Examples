@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/opt/conda/bin/python
 
 """ Test for the pillow example """
 
@@ -31,7 +31,7 @@ def run():
     # loop over element types
     for elty in eltyps.keys():
         # open results summary file
-        print(elty
+        print(elty)
         # read pre.fbd and write it to pre-auto.fbd
         fout = open("run_auto.fbd", "w")
         fout.write("ulin "+elty+"\n")
