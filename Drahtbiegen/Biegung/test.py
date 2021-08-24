@@ -31,11 +31,11 @@ def pre():
         "all.msh",
         "rb1.inp")
 
-    print("removing files"
+    print("removing files")
     for spec in toRemovePre:
         files=glob.glob(spec)
         for f in files:
-            print(f
+            print(f)
             os.remove(f)
     os.system("cgx -bg pre.fbd")
 
